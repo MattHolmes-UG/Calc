@@ -1,5 +1,5 @@
-const cacheName = "v1";
-const cacheFiles = [
+var cacheName = "v1";
+var cacheFiles = [
   '/Calc/',
   '/Calc/calc.js',
   '/Calc/index.html',
@@ -20,7 +20,7 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys().then((keyList) => {
-      let cacheWhiteList = keyList.filter((key) => {
+      var cacheWhiteList = keyList.filter((key) => {
         return key.indexOf(APP_PREFIX);
       })
       cacheWhiteList.push(cacheName);
