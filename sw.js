@@ -1,10 +1,8 @@
-const APP_PREFIX = "Calc_";
-const VERSION = "version_1";
-const cacheName = APP_PREFIX + VERSION;
+const cacheName = "v1";
 const cacheFiles = [
-  '/',
-  '/calc.js',
-  '/index.html',
+  '/Calc/',
+  '/Calc/calc.js',
+  '/Calc/index.html',
   '/styles.css',
   '/bootstrap.min.css',
   '/bootstap.min.js'
