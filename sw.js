@@ -1,7 +1,7 @@
 var cacheName = "v1";
 var cacheFiles = [
-  '/',
-  '/index.html'
+  '/Calc/',
+  '/Calc/index.html'
 ];
 
 self.addEventListener('install', (e) => {
