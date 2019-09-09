@@ -1,5 +1,8 @@
 var cacheName = "v1";
-var cacheFiles = [];
+var cacheFiles = [
+  '/',
+  '/index.html'
+];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
