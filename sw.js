@@ -1,13 +1,13 @@
 const APP_PREFIX = "Calc_";
 const VERSION = "version_1";
-const cacheName = `${APP_PREFIX}${VERSION}`;
+const cacheName = APP_PREFIX + VERSION;
 const cacheFiles = [
-  '/Calc/',
-  '/Calc/calc.js',
-  '/Calc/index.html',
-  '/Calc/styles.css',
-  '/Calc/bootstrap.min.css',
-  '/Calc/bootstap.min.js'
+  '/',
+  '/calc.js',
+  '/index.html',
+  '/styles.css',
+  '/bootstrap.min.css',
+  '/bootstap.min.js'
 ];
 
 self.addEventListener('install', (e) => {
