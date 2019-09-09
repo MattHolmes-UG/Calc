@@ -1,4 +1,6 @@
-var cacheName = "v1";
+var APP_PREFIX = "Calc_";
+var VERSION = "version_1";
+var cacheName = APP_PREFIX + VERSION;
 var cacheFiles = [
   '/Calc/',
   '/Calc/index.html'
