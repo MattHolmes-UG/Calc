@@ -1,12 +1,5 @@
 var cacheName = "v1";
-var cacheFiles = [
-  '/Calc/',
-  '/Calc/calc.js',
-  '/Calc/index.html',
-  '/styles.css',
-  '/bootstrap.min.css',
-  '/bootstap.min.js'
-];
+var cacheFiles = [];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
