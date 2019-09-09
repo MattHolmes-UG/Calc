@@ -3,7 +3,11 @@ var VERSION = "version_1";
 var cacheName = APP_PREFIX + VERSION;
 var cacheFiles = [
   '/Calc/',
-  '/Calc/index.html'
+  '/Calc/index.html',
+  '/Calc/styles.css',
+  '/Calc/calc.js',
+  '/Calc/bootstrap.min.js',
+  '/Calc/bootstrap.min.css'
 ];
 
 self.addEventListener('install', (e) => {
@@ -23,7 +27,7 @@ self.addEventListener('activate', (e) => {
       })
       cacheWhiteList.push(cacheName);
       return Promise.all(keyList.map((key, i) => {
-        if (cacheWhitelist.indexOf(key) === -1) {
+        if (cacheWhiteList.indexOf(key) === -1) {
           console.log('deleting cache : ' + keyList[i])
           return caches.delete(keyList[i])
         }
